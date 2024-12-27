@@ -1,4 +1,4 @@
-
+import numpy as np
 class PLTS:
     def __init__(self, terms, max_scale=7, symmetric_scale=True, weight=1):
         self.terms = terms
@@ -323,11 +323,9 @@ class PLTSEvaluationMatrix:
         return total_sum
 
 
-
 class Matrix:
     def __init__(self, matrix):
         self.matrix = matrix
-
     def sum_rows_in_matrices(self):
         num_matrices = len(self.matrix)
         num_rows = len(self.matrix[0])
